@@ -44,7 +44,7 @@ All elements of candidates are distinct.
      */
     public class CombinationSum
     {
-        public IList<IList<int>> CombinationSum(int[] candidates, int target)
+        public IList<IList<int>> CombinationSumSolution(int[] candidates, int target)
         {
             var result = new List<IList<int>>();
             BackTrack(candidates, target, 0, new List<int>(), result);

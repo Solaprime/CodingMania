@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingMania.LeetCodeQuestions
+namespace CodingMania.GregHoggVideos
 {
     internal  class MergedTwoWord
     {
