@@ -109,10 +109,10 @@ haystack and needle consist of only lowercase English characters.
         /// <param name="hayStack"></param>
         /// <param name="needle"></param>
         /// <returns></returns>
-        public int StrUsingKMp(string hayStack, string needle)
-        {
+        //public int StrUsingKMp(string hayStack, string needle)
+        //{
 
-        }
+        //}
 
     }
 }

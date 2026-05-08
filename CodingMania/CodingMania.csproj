@@ -23,7 +23,6 @@
     <Folder Include="LeetCodeQuestions\String\Easy\Part7\" />
     <Folder Include="LeetCodeQuestions\String\Medium\" />
     <Folder Include="LeetCodeQuestions\String\Hard\" />
-    <Folder Include="LeetCodeQuestions\TwoPointerQuestions\Medium\" />
     <Folder Include="LeetCodeQuestions\TwoPointerQuestions\Hard\" />
     <Folder Include="LeetCodeQuestions\WorkingWithLinkedList\Hard\" />
     <Folder Include="LeetCodeQuestions\WorkingWithRecursion\Medium\" />
