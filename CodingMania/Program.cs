@@ -1,4 +1,5 @@
-﻿using CodingMania.LeetCodeQuestions;
+﻿using CodingMania.GregHoggVideos;
+using CodingMania.LeetCodeQuestions;
 using CodingMania.LeetCodeQuestions.Array.Easy;
 using CodingMania.LeetCodeQuestions.BinaryTreeQuestions.PlayingWithBinaryTree;
 using CodingMania.LeetCodeQuestions.GraphQuestions.Easy;
@@ -63,23 +64,34 @@ namespace CodingMania
             //int result = factorialFlow.Factorial(4);
 
 
-            _997FindTheTownJudge fingJudge = new _997FindTheTownJudge();
+            //_997FindTheTownJudge fingJudge = new _997FindTheTownJudge();
 
-            int[][] trust1 = { new int[] { 1, 2 } };
-            int[][] trust2 = { new int[] { 1, 3 }, new int[] { 2, 3 } };
-            int[][] trust3 = { new int[] { 1, 3 }, new int[] { 2, 3 }, new int[] { 3, 1 } };
-
-
-            Console.WriteLine(fingJudge.FindJudge(2, trust1));  // 2
-            Console.WriteLine(fingJudge.FindJudge(3, trust2)); // 3
-            Console.WriteLine(fingJudge.FindJudge(3, trust3)); //-1
+            //int[][] trust1 = { new int[] { 1, 2 } };
+            //int[][] trust2 = { new int[] { 1, 3 }, new int[] { 2, 3 } };
+            //int[][] trust3 = { new int[] { 1, 3 }, new int[] { 2, 3 }, new int[] { 3, 1 } };
 
 
-            Console.WriteLine("Using Graph");
+            //Console.WriteLine(fingJudge.FindJudge(2, trust1));  // 2
+            //Console.WriteLine(fingJudge.FindJudge(3, trust2)); // 3
+            //Console.WriteLine(fingJudge.FindJudge(3, trust3)); //-1
 
-            Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(2, trust1));  // 2
-            Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(3, trust2)); // 3
-            Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(3, trust3)); //-1
+
+            //Console.WriteLine("Using Graph");
+
+            //Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(2, trust1));  // 2
+            //Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(3, trust2)); // 3
+            //Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(3, trust3)); //-1
+
+
+            var input = new int[][]
+            {
+         
+                new int[] { 2, 6 },
+                new int[] { 1, 3 },
+                new int[] { 8, 10 },
+                new int[] { 15, 18 },
+            };
+           var result = _56MergeIntervals.Merge(input);
         }
 
     }
