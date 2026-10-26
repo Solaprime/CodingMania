@@ -55,6 +55,9 @@ Note: This question is the same as 2287: Rearrange Characters to Make Target Str
         {
             int[] count = new int[26];
 
+            //iterate through all the letters in the word
+            //and populate the ballon
+
             foreach (char c in text)
             {
                 count[c- 'a']++;

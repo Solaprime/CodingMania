@@ -83,15 +83,26 @@ namespace CodingMania
             //Console.WriteLine(fingJudge.FindJudgeUsingGrapgh(3, trust3)); //-1
 
 
-            var input = new int[][]
-            {
-         
-                new int[] { 2, 6 },
-                new int[] { 1, 3 },
-                new int[] { 8, 10 },
-                new int[] { 15, 18 },
-            };
-           var result = _56MergeIntervals.Merge(input);
+            // var input = new int[][]
+            // {
+
+            //     new int[] { 2, 6 },
+            //     new int[] { 1, 3 },
+            //     new int[] { 8, 10 },
+            //     new int[] { 15, 18 },
+            // };
+            //var result = _56MergeIntervals.Merge(input);
+
+            // _2239_FindClosestNumberToZero testFlow = new _2239_FindClosestNumberToZero();
+            // int[] nums = { -4, -2, 1, 4, 8 };
+            //var result1 =  testFlow.FindClosestNumber(nums);
+            // Console.WriteLine(result1);
+
+            // int[] nums1 = { 2, -1, 1 };
+            // var result2 = testFlow.FindClosestNumber(nums1);
+            // Console.WriteLine(result2);
+
+          
         }
 
     }

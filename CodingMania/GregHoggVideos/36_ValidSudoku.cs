@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -81,6 +82,7 @@ Only the filled cells need to be validated according to the mentioned rules.
 
             HashSet<string> seen = new HashSet<string>();
 
+            //Ome Iteration tO vERIFY ALL
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9  ; j++)
@@ -93,8 +95,40 @@ Only the filled cells need to be validated according to the mentioned rules.
                     }
                     //at every instance Populate the Row, Column and Box
 
+
+                    //   These lines build three “facts” about the cell.For the 5 at row 0, column 0:
+
+                    //"row-0-5" means “a 5 exists in row 0”.
+                    //"col-0-5" means “a 5 exists in column 0”.
+                    //"box-0-0-5" means “a 5 exists in box(0, 0)”.
+
+                    /*
+                       The prefixes row, col and box matter. Without them, “a 5 in row 0” and “a 5 in column 0” 
+                    would  produce the same key and look like a duplicate when they aren’
+                     
+                     */
+
                     string rowKey = $"row-{i}-{val}";
                     string colKey = $"col-{j}-{val}";
+
+                    /*
+                     The box formula i / 3, j / 3 is the clever part. 
+                    Integer division squashes indices 0–8 down to 0–2:
+
+             The box formula i / 3, j / 3 is the clever part. Integer division squashes indices 0–8 down to 0–2:
+
+Index	0 1 2	3 4 5	6 7 8
+/ 3     	0	 1     	2
+
+
+  So (i/3, j/3) gives each of the nine boxes a coordinate:
+  (0,0) | (0,1) | (0,2)
+------+-------+------
+(1,0) | (1,1) | (1,2)
+------+-------+------
+(2,0) | (2,1) | (2,2)
+                     
+                     */
                     string boxKey = $"box-{i / 3}-{j / 3}-{val}";
                     if (seen.Contains(rowKey) ||seen.Contains(colKey) || seen.Contains(boxKey))
                     {

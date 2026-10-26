@@ -46,16 +46,23 @@ s and t consist of lowercase English letters.
 
             int[] count = new int[26];
 
+            //Iterate throght the Fist Letter 
+            //Populate the Letter that is a -3, b-1 c=0, d-4
+
             foreach (char  c  in s)
             {
                 count[c - 'a']++;
             }
 
+            //Iterate through the Second Letter
+            //Find the Letters and decrease theindex
+            // a = 3-1, b=1-1
             foreach (char c in t)
             {
                 count[c - 'a']--;
             }
 
+            //Iterate through here if any count is Not Equals
             foreach (int value in count)
             {
                 if (value != 0)

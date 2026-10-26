@@ -111,7 +111,7 @@ n == matrix[i].length
                 //Bottom-top
 
 
-                //1 left->Right
+                //1  left->Right
                 for (int col = left; col <= right; col++)
                 {
                     result.Add(matrix[top][col]);

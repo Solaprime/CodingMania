@@ -71,6 +71,8 @@ Follow up: Can you solve the problem in O(1) extra space complexity? (The output
         /// <returns></returns>
         public int[] ProductExceptSelf2(int[] nums)
         {
+
+            //This approach Populate a Left array and a right array to Use
             int n = nums.Length;
 
             int[] left = new int[n];
@@ -88,7 +90,10 @@ Follow up: Can you solve the problem in O(1) extra space complexity? (The output
                 leftProduct *= nums[i - 1];
                 left[i] = leftProduct;
 
+                //you are iterating From the Reverse Heere So note n-1
                 rightProduct *= nums[n - i];
+
+                //Note why we have n-1-i , Because we are Populating this Array Reacall Array are zero Indesxed
                 right[n - i - 1] = rightProduct;
             }
 
