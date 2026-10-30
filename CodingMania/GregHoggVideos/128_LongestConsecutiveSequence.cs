@@ -67,9 +67,17 @@ Constraints:
                     int current = num;
                     int length = 1;
 
+
+                    //To Prevent and Infinite Loop of 
+                    //Contious check of 2+1 =3 
+                    //and 3 is in the Lop the Lop becomes Infinite
                     while (set.Contains(current + 1))
                     {
+<<<<<<< HEAD
                         
+=======
+                        //So increment Length and The Currebt Item 
+>>>>>>> c31f17440a54ec6f47086c18aaf42c345d7f3d4f
                         current++;
                         length++;
                     }
