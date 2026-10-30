@@ -62,11 +62,14 @@ Constraints:
                 //since 6 is in the Set
                 if (!set.Contains(num -1))
                 {
+                    //Recal Scope Of Variable flow, inums is define on the outer Foreach
+                    //if you do 
                     int current = num;
                     int length = 1;
 
                     while (set.Contains(current + 1))
                     {
+                        
                         current++;
                         length++;
                     }
