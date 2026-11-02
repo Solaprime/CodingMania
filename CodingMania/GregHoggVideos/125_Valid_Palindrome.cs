@@ -88,5 +88,17 @@ s consists only of printable ASCII characters.
 
         }
 
+
+        public bool IsPalindrome2(string s)
+        {
+            string cleaned = new string(
+                s.Where(char.IsLetterOrDigit)
+                 .Select(char.ToLowerInvariant)
+                 .ToArray());
+
+            string reversed = new string(cleaned.Reverse().ToArray());
+
+            return cleaned == reversed;
+        }
     }
 }
