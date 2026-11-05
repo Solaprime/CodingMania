@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Accesories\" />
-    <Folder Include="GregHoggVideos\BinarySearch\" />
     <Folder Include="LeetCodeQuestions\ArrayQuestions\Medium\" />
     <Folder Include="LeetCodeQuestions\ArrayQuestions\Hard\" />
     <Folder Include="LeetCodeQuestions\BackTrackingQuestions\Hard\" />
