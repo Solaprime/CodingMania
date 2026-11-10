@@ -58,6 +58,7 @@ namespace CodingMania.LeetCodeQuestions.WorkingWithLinkedList.Easy
                 }
             }
 
+            
             return head;
         }
     }
