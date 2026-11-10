@@ -26,7 +26,7 @@ Example 2:
 
 Input: head = [0]
 Output: 0
- 
+  
 
 Constraints:
 
