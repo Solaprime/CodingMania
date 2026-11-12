@@ -38,6 +38,7 @@ The list is guaranteed to be sorted in ascending order
     public class _83_Remove_Duplicate_From_Sorted_List
     {
 
+
         public ListNode  RemoveDuplicated(ListNode head)
         {
 
