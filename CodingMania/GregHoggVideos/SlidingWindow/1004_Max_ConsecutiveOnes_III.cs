@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CodingMania.GregHoggVideos.SlidingWindow
+{
+    /*
+     1004. Max Consecutive Ones III
+Medium
+Topics
+premium lock icon
+Companies
+Hint
+Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
+
+ 
+
+Example 1:
+
+Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2
+Output: 6
+Explanation: [1,1,1,0,0,1,1,1,1,1,1]
+Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
+Example 2:
+
+Input: nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3
+Output: 10
+Explanation: [0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]
+Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+nums[i] is either 0 or 1.
+0 <= k <= nums.length
+     
+     */
+    class _1004_Max_ConsecutiveOnes_III
+    {
+        //You have an array of only 0s and 1s and you may flip at most k zeros
+        //into ones, after flipping, What is the longest run of Consectutive 1s you can get
+        // [1,1,1,0,0,0,1,1,1,1,0] with k =2; flip zeros at index 5 and index 10 and you get 6 1s in  a row(indiced 5 to 10) . no choice of two flips does better, so the answer is 6
+        // 
+
+        public int LongestOnes(int[] nums,int k)
+        {
+            int left = 0;
+            int zeros = 0;
+            int longest = 0;
+
+            for (int right = 0; right < nums.Length; right++)
+            {
+                //add incoming Element
+                if (nums[right] == 0)
+                {
+                    zeros++;
+                }
+
+                //Shrink While invalid
+                while (zeros > k)
+                {
+                    if (nums[left] == 0)
+                    {
+                        zeros--;
+                    }
+                    left++;
+                }
+
+                longest = Math.Max(longest, right - left + 1);
+            }
+
+            return longest;
+        }
+
+        //This QUESTION is quite Simialry to LongestSubstringWithoutRepeaking
+
+    }
+}
