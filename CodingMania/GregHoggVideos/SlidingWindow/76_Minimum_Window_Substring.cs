@@ -54,21 +54,21 @@ s and t consist of uppercase and lowercase English letters.
     public class _76_Minimum_Window_Substring
     {
 
-        public string MinWindow(string s, string t)
-        {
-            //Check 
-            if (t.Length > s.Length)
-            {
-                return "";
-            }
+        //public string MinWindow(string s, string t)
+        //{
+        //    //Check 
+        //    if (t.Length > s.Length)
+        //    {
+        //        return "";
+        //    }
 
-            //What  t needs since you are looking for t in S
-            int[] need = new int[28];
-            foreach (char c in t)
-            {
-                need[c]++;
+        //    //What  t needs since you are looking for t in S
+        //    int[] need = new int[28];
+        //    foreach (char c in t)
+        //    {
+        //        need[c]++;
 
-            }
-         }
+        //    }
+        // }
     }
 }

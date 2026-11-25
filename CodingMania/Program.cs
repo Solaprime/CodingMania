@@ -1,4 +1,5 @@
 ﻿using CodingMania.GregHoggVideos;
+using CodingMania.GregHoggVideos.Binary_TRee;
 using CodingMania.LeetCodeQuestions;
 using CodingMania.LeetCodeQuestions.Array.Easy;
 using CodingMania.LeetCodeQuestions.BinaryTreeQuestions.PlayingWithBinaryTree;
@@ -102,7 +103,29 @@ namespace CodingMania
             // var result2 = testFlow.FindClosestNumber(nums1);
             // Console.WriteLine(result2);
 
-          
+            Core_Binary_Tree_Explanation testFlow = new Core_Binary_Tree_Explanation();
+
+            var createdTree = testFlow.CreateTree();
+            Console.WriteLine("Console Writeline test Pre_Order _Flow");
+            testFlow.PreOrder(createdTree);
+
+
+
+            //// var createdTree = testFlow.CreateTree();
+            //Console.WriteLine("Console Writeline test In_Order _Flow");
+            //testFlow.InOrder(createdTree);
+
+
+
+            //Console.WriteLine("Console Writeline test Post_Order _Flow");
+            //testFlow.PostOrder(createdTree);
+
+
+
+
+
+
+        
         }
 
     }
