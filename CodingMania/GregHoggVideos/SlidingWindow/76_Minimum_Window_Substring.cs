@@ -54,6 +54,7 @@ s and t consist of uppercase and lowercase English letters.
     public class _76_Minimum_Window_Substring
     {
 
+<<<<<<< HEAD
         public string MinWindow(string s, string t)
         {
             //Check  if t is longer tan s, no window of s can posibbly contain all of t
@@ -135,5 +136,23 @@ s and t consist of uppercase and lowercase English letters.
 
 
          }  
+=======
+        //public string MinWindow(string s, string t)
+        //{
+        //    //Check 
+        //    if (t.Length > s.Length)
+        //    {
+        //        return "";
+        //    }
+
+        //    //What  t needs since you are looking for t in S
+        //    int[] need = new int[28];
+        //    foreach (char c in t)
+        //    {
+        //        need[c]++;
+
+        //    }
+        // }
+>>>>>>> 7fe89ec514cc0fff69e99df629b953bfcb67d9a3
     }
 }
